@@ -1,0 +1,17 @@
+projection implementation in class ZRAP100_BP_C_TRAVELTP_500 unique;
+strict ( 2 );
+use draft;
+define behavior for ZRAP100_C_TRAVELTP_500 alias Travel
+use etag
+
+{
+  use create;
+  use update;
+  use delete;
+
+  use action Edit;
+  use action Activate;
+  use action Discard;
+  use action Resume;
+  use action Prepare;
+}
